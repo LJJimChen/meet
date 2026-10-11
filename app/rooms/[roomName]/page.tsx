@@ -21,7 +21,7 @@ export default async function Page({
     typeof _searchParams.codec === 'string' && isVideoCodec(_searchParams.codec)
       ? _searchParams.codec
       : 'vp9';
-  const hq = _searchParams.hq === 'true' ? true : false;
+  const hq = _searchParams.hq === 'false' ? false : true;
   const singlePC = _searchParams.singlePC !== 'false';
 
   return (
